@@ -1,0 +1,93 @@
+<html><head>
+    <title>Reported Attack Page!</title>
+
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+</script>
+				<style>
+				body {
+				 font-family: segoe ui;
+                align-items: center;
+    display: flex;
+            background: #f5f5f5;
+    color: #3f3f3f;
+    font-size: 16px;
+    height: 100vh;
+    line-height: 1.6;
+    min-height: 240px;
+    min-width: 180px;
+    padding: 0 48px;
+	  box-sizing: border-box;
+				}
+
+				button {
+        display: inline-block;
+    font-family: "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+    background: #009ED8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    float: right;
+    font-size: 12px;
+    outline: 0;
+        }
+				button:hover {
+  background: #0288b9;
+    transition: .3s all;
+        }
+		p {
+			color:#4a4a4a; font-size: 16px; word-wrap: break-word;
+		}
+		
+		h1 {
+			color:#4a4a4a; font-size: 24px; word-wrap: break-word;font-weight: 500;
+		}
+		
+		.bottom {
+			padding-top: 20px;
+		}
+		</style>
+</head>
+
+            
+<body>
+              <div id='container' style='margin: auto;
+    max-width: 600px;
+    padding: 20px 0;
+    z-index: 2;'>
+			  <img src="data:image/png;base64,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">
+
+<h1>Reported Attack Page!</h1>
+  
+  <p>This web page has been reported as an attack page and has been blocked based on your security preferences. Attack pages try to install programs that steal private information, use your computer to attack others, or damage your system. Some attack pages intentionally distribute harmful software, but many are compromised without the knowledge or permission of their owners. </p>
+  
+		<div class="bottom">
+                    <button class="home" onclick="window.location='http://polarityweb.weebly.com'">Back to Safety</button>
+					 <button class="unBlock" onclick="polarity.allowSite();">Allow Website</button>
+                    <br><font face="segoe ui light" style="color:#BDBDBD; font-size: 14px; word-wrap: break-word;">NET::ERR_CERT_REVOKED</font><br>
+					</div>
+                </div>
+
+</body></html>
