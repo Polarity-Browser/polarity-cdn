@@ -1,0 +1,1 @@
+Fixed thread safety issues in browser, improved stability, updated UAs
